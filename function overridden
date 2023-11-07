@@ -1,0 +1,26 @@
+//function overridding//
+#include<iostream>
+using namespace std;
+class set{
+    public:
+    setup(int var,int chr){
+        int put=var+chr;
+        cout<<put<<endl;
+    }
+};
+//calling FO by using derived class//
+class jet :public set{
+public:
+    setup(int var,int chr){
+        int jup=var*chr;
+        cout<<jup<<endl;
+        set::setup( var, chr);
+    }
+};
+//calling overriden function to the base class//
+int main(){
+    jet j;
+    j.setup(7,8);
+    j.set::setup(7,8);
+    return 0;
+}
