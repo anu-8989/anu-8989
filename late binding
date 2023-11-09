@@ -1,0 +1,26 @@
+//when we want to call the function of derived class//
+#include<iostream>
+using namespace std ;
+class set{
+public:
+  virtual void show(){
+        cout<<"my name is anushka"<<endl;
+    }
+    virtual void pam(){
+        cout<<"my father"<<endl;
+    }
+              };
+  class jet:public set {
+  public:
+    void show(){
+        cout<<"my name is anu"<<endl;
+    }
+  };
+  int main(){
+      set* bptr;
+      jet a;
+      bptr = &a;
+      bptr->show();
+      bptr->pam();
+      return 0;
+  }
