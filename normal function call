@@ -1,0 +1,21 @@
+//normal function call//
+#include<iostream>
+using namespace std;
+class A{
+    public:
+int add(int a,int b){
+   int add=a+b;
+   return a+b;
+}
+double add (double c,double d){
+    double add=c+d;
+    return c+d;
+}
+};
+int main(){
+    A obj1;
+    int g=obj1.add(3,4);
+   double e= obj1.add(5.2,7.9);
+    cout<<e<<endl;
+    cout<<g<<endl;
+}
