@@ -1,0 +1,25 @@
+//scope resolution//
+#include<iostream>
+using namespace std;
+class BB{
+public:
+    int age;
+    string name;
+public:
+void member();
+     void data(){
+        member();
+     }
+};
+void BB:: member(){
+    int age =3;
+    string name ="anu";
+    cout<<age<<endl;
+    cout<<name<<endl;
+    return ;
+}
+int main(){
+    BB obj1;
+    obj1.data();
+    return 0;
+}
