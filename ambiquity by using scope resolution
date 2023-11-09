@@ -1,0 +1,27 @@
+//scope resolution only tells from which class a variable is called//
+#include<iostream>
+using namespace std;
+class A{
+    public:
+    int a=10;
+};
+class B:public A{
+public:
+    int b=4;
+};
+class C:public A{
+    public:
+int c=8;
+};
+class D:public C,public B{
+};
+int main(){
+    D obj;
+   cout<< obj. B::a<<endl;
+   obj.C::a=6;
+    cout<<obj.C::a<<endl;
+    cout<<obj.c<<endl;
+    cout<<obj.b<<endl;
+    return 0;
+}
+
