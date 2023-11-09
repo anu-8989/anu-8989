@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+class Addition{
+private:
+    int c=4;
+    int d=8;
+public:
+int add(){
+    int ans=c+d;
+    return ans;
+}
+};
+int main(){
+    Addition obj1;
+    int r=obj1.add();
+    cout<<r<<endl;
+    return 0;
+}
