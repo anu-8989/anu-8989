@@ -1,0 +1,35 @@
+//access specifiers//
+#include<iostream>
+using namespace std;
+class maths{
+public:
+    int a=8;
+private :
+    int b;
+protected:
+    int c;
+public:
+   void addition(int d,int g){
+        int b=d;
+        int c=g;
+        int sum=a+b+c;
+        cout<<sum<<endl;
+    }
+};
+class child:protected maths{
+public:
+    void subtraction( int k,int l){
+    int b=k;
+    int c=l;
+    int sub=a-b-c;
+    cout<<sub<<endl;
+    }
+};
+int main(){
+    child ch;
+    maths ck;
+    ck.addition(4,8);
+    ch.subtraction(9,6);
+    return 0;
+}
+when we are not assigning the value then we pass the values and keep equal to data members that we have intiliazed earlier.....
