@@ -1,0 +1,14 @@
+//factorial programme//
+#include<iostream>
+using namespace std;
+  int factorial(int n){
+        int fact=1;
+        for(i=0;i<=n;i++){
+            fact*=1; 
+        }
+        return fact;
+    }
+int main(){
+    cout<<factorial(9);
+    return 0;
+}
