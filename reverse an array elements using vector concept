@@ -1,0 +1,23 @@
+// using vector concept//
+#include <iostream>
+#include<vector>
+using namespace std;
+void linearsearch( vector<int> &num){
+     int start=0;
+     int end=num.size()-1;
+    while(start<end){
+        swap(num.at(start),num.at(end));
+        start++;
+        end--;
+    }
+ }
+int main() {
+    // Write C++ code here
+    vector<int>vec={2,4,6,7,3,9};
+    linearsearch(vec);
+    for(int i;i<vec.size();i++){
+        cout<<vec.at(i)<<endl;
+    }
+
+    return 0;
+}
