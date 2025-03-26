@@ -1,0 +1,19 @@
+package org.example.Basic;
+
+public class Reverse {
+    public static void main(String args[]){
+        String str="hello";
+        char[] words = str.toCharArray();
+        int start=0;
+        int end= words.length-1;
+      while(start<end){
+          char temp= words[start];
+          words[start]=words[end];
+          words[end] = temp;
+          start++;
+          end--;
+        }
+        System.out.println(words) ;
+    }
+
+}
